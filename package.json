@@ -1,0 +1,28 @@
+{
+  "name": "erc404",
+  "version": "1.0.0",
+  "description": "ERC404 is an experimental, mixed ERC20 / ERC721 implementation with native liquidity and fractionalization. While these two standards are not designed to be mixed, this implementation strives to do so in as robust a manner as possible while minimizing tradeoffs.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srsydv/ERC404.git"
+  },
+  "author": "Shrish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srsydv/ERC404/issues"
+  },
+  "homepage": "https://github.com/srsydv/ERC404#readme",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.4.1",
+    "hardhat": "^2.19.5"
+  }
+}
