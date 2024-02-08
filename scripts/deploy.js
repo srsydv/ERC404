@@ -29,7 +29,7 @@ async function main() {
 
     // contract = await contractFactory.deploy();
 
-    const pndr = await hre.ethers.deployContract("ERC404Factory");
+    const pndr = await hre.ethers.deployContract("ERC404Factory", []);
     await pndr.waitForDeployment();
 
     // let aa = await pndr.deployERC404("0xf69F75EB0c72171AfF58D79973819B6A3038f39f")

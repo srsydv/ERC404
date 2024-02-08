@@ -9,9 +9,12 @@ contract Pandora is ERC404 {
     string public baseTokenURI;
 
     constructor(
+        string memory _name,
+        string memory _symbol,
+        uint256 _totalNativeSupply,
         address _owner
-    ) ERC404("Pandora", "PANDORA", 18, 10000, _owner) {
-        balanceOf[_owner] = 10000 * 10 ** 18;
+    ) ERC404(_name, _symbol, 18, _totalNativeSupply, _owner) {
+        balanceOf[_owner] = _totalNativeSupply * 10 ** 18;
     }
 
     function setDataURI(string memory _dataURI) public onlyOwner {
